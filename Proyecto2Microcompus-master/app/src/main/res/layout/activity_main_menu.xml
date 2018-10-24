@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="example.emmanuel.proyecto2microcompus.MainActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/include" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:weightSum="4">
+            <Button
+                android:id="@+id/coffbutton"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_coffbutton"
+                style="?android:attr/borderlessButtonStyle"
+                />
+            <Button
+                android:id="@+id/resbutton"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_restbutton"
+                style="?android:attr/borderlessButtonStyle"/>
+            <Button
+                android:id="@+id/barbutton"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_beerbutton"
+                style="?android:attr/borderlessButtonStyle"/>
+            <Button
+                android:id="@+id/sodbutton"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_sodbutton"
+                style="?android:attr/borderlessButtonStyle"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
